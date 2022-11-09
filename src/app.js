@@ -6,7 +6,7 @@ const {unknownEndpoint} = require('./utils/utilities')
 const {newContactToken} = require('./utils/tokens')
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 10000;
 
 
 morgan.token('contact', newContactToken)
