@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 10000;
 
 morgan.token('contact', newContactToken)
 
-
+app.use(express.static('build'))
 app.use(express.json());
 app.use(morgan(':method :url :status :res[content-length] - :response-time ms :contact'))
 app.use(cors())
